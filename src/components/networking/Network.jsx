@@ -1,0 +1,2 @@
+const Network = ({url, icon, name}) => <a className="hover:scale-110 tranform trasition-all ease-in-out duration-200 "href={url} target="__blank"><img className="w-10" src={icon} alt={name}/></a>
+export default Network
