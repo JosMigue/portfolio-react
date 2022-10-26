@@ -1,8 +1,8 @@
 import { PageContext } from "../../context/PageContext"
 import { useContext } from "react"
 export default function Menu(){
-  const {page, setPage} = useContext(PageContext);
-  const elements = ['Home','About', 'Stack', 'Contact'];
+  const {setPage} = useContext(PageContext);
+  const elements = ['Home','About', 'Stack', 'Say Hi'];
   const styles = 'text-white cursor-pointer font-bold mx-5 hover:border-white hover:border-b-2 border-b-2 border-transparent transition duration-300';
     return(
       <div className="relative">

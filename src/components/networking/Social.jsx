@@ -6,7 +6,7 @@ function Social(){
   return(
     <>
       <div className="flex flex-row justify-evenly w-1/2">
-        <Network name="Instagram" icon={instagram} url="#"/>
+        <Network name="Instagram" icon={instagram} url="https://www.instagram.com/jose_miguels16/"/>
         <Network name="Linkedin" icon={linkedin} url="https://www.linkedin.com/in/itsmejosmigue/"/>
         <Network name="Github" icon={github} url="https://github.com/JosMigue"/>
       </div>
