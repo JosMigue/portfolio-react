@@ -4,6 +4,10 @@ import {useState} from 'react'
 export default function AboutMe(){
   const [section, setSection] = useState('main')
   const [portfolio, setPortfolio] = useState('react')
+  const styles ={
+    textHighlights: 'border border-green-400',
+    disabledButton:'py-2 px-4 bg-transparent border-2 border-green-400 rounded-lg font-bold text-green-400 disabled opacity-50 cursor-not-allowed'
+  }
   function About(){
     return (
       <>
@@ -13,37 +17,36 @@ export default function AboutMe(){
               <h1 className="text-5xl font-bold text-white text-center my-2 w-full">About</h1>
               <div>
                 <p className="text-gray-300 text-center">Hi, I'm developer, I love to write code 👨🏻‍💻</p>
-                <p className="text-gray-300 text-center">I have more than 2 years of experience with Web development, I had the opportunity to met with amazing people how I learned a lot.</p>
-                <p className="text-gray-300 text-center">Actually, I'm trying to improve my skills as Full-Stack developer with modern technologies.</p>
+                <p className="text-gray-300 text-center">I have more than 2 years of experience with Web development, I had the opportunity to met with amazing people whom I learned a lot.</p>
+                <p className="text-gray-300 text-center">Actually, I'm looking for new challenges as Frontend or Backend developer</p>
               </div>
 
             </div>
             <div className="flex flex-wrap justify-center">
               <h2 className="text-3xl w-full font-bold text-white text-center my-2">Highlights</h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 w-full text-center text-white">
-                <p className="border border-green-400 ">Backend development</p>
-                <p className="border border-green-400 ">Frontend development</p>
-                <p className="border border-green-400 ">Fast learning</p>
-                <p className="border border-green-400 ">Team work</p>
-                <p className="border border-green-400 ">Continuos improvement</p>
-                <p className="border border-green-400 ">Self learning</p>
-                <p className="border border-green-400 ">English B2</p>
+                <p className={styles.textHighlights} >Backend development</p>
+                <p className={styles.textHighlights} >Frontend development</p>
+                <p className={styles.textHighlights} >Team work</p>
+                <p className={styles.textHighlights} >Continuos improvement</p>
+                <p className={styles.textHighlights} >Self learning</p>
+                <p className={styles.textHighlights} >English B2</p>
               </div>
             </div>
             <div className="flex flex-wrap justify-center">
               <h2 className="text-3xl w-full font-bold text-white text-center my-2">Hobbies</h2>
               <div className="grid lg:grid-cols-2 grid-cols-1 w-full text-center text-white">
-                <p className="border border-green-400 ">Listen to music</p>
-                <p className="border border-green-400 ">Tacos lover 🌮❤️</p>
-                <p className="border border-green-400 ">Beer lover 🍺❤️</p>
-                <p className="border border-green-400 ">Walks out</p>
-                <p className="border border-green-400 ">Video Games</p>
-                <p className="border border-green-400 ">Coding</p>
+                <p className={styles.textHighlights} >Listen to music</p>
+                <p className={styles.textHighlights} >Tacos lover 🌮❤️</p>
+                <p className={styles.textHighlights} >Coding</p>
+                <p className={styles.textHighlights} >Movies</p>
+                <p className={styles.textHighlights} >Walks out</p>
+                <p className={styles.textHighlights} >Video Games</p>
               </div>
             </div>
-{/*             <div className="flex flex-wrap justify-center my-10"> // Future features
-              <button onClick={() => setSection(section => section = 'projects')} className="py-2 px-4 bg-transparent border-2 border-green-400 rounded-lg font-bold text-green-400">My Personal Projects 👨🏻‍💻</button>
-            </div> */}
+            <div className="flex flex-wrap justify-center my-10">
+              <button disabled="true" onClick={() => setSection(section => section = 'projects')} className={styles.disabledButton}>My Personal Projects 👨🏻‍💻 (work in progress)</button>
+            </div>
           </div>
         </MainSection>
       </>

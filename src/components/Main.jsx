@@ -9,6 +9,7 @@ export default function Main(){
     startContent: 'flex flex-col lg:justify-start justify-center lg:items-start items-center',
     img:'rounded-full border-dotted border-8 border-green-400 profile-img'
   }
+
   return(
     <>
       <MainSection>

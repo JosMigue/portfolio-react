@@ -2,6 +2,7 @@ import Network from './Network'
 import instagram from '../../assets/img/instagram.svg'
 import linkedin from '../../assets/img/linkedin.svg'
 import github from '../../assets/img/github.svg'
+
 function Social(){
   return(
     <>
