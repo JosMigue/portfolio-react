@@ -1,6 +1,9 @@
 body{
   background-color: rgb(15, 23, 42);
 }
+div#usuario{
+  background: red;
+}
 
 .profile-img{
   width: 450px;

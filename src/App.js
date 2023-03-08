@@ -4,6 +4,7 @@ import Menu from './components/layout/Menu'
 import Stack from './components/Stack'
 import Contact from './components/Contact'
 import AboutMe from './components/AboutMe'
+import WorkExperience from './components/WorkExperience'
 import { useState } from 'react'
 import {PageContext} from './context/PageContext'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
@@ -20,6 +21,9 @@ function App() {
         }
         {
           page === 'About' ? <AboutMe/> : ''
+        }
+        {
+          page === 'Work experience' ? <WorkExperience/> : ''
         }
         {
           page === 'Stack' ? <Stack/> : ''

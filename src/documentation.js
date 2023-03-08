@@ -1,17 +1,18 @@
-//Arrow functions
-const sayHi = () => {
-    console.log('Hi');
-}
-
-const sayName = (name) => {
+/* 
+* {brief description}
+* @param {type} {name} {brief description}
+* @return {type} {brief description}
+*/
+function sayName(name){
     console.log(name);
 }
 
-// Conventional functions
-function sayHello(){
-    console.log('Hello');
-}
-
-function sayNameC(name){
-    console.log(name);
+/* 
+* Return plus of two numbers
+* @param {Number} n1 First number
+* @param {Number} n2 Second number
+* @return {Number} result plus
+*/
+function plusTwoNumbers(n1,n2){
+    return n1 + n2;
 }
