@@ -1,36 +1,48 @@
+.main-container-layout {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-content {
+  flex: 1;
+  /* O puedes usar height: 100%; si sabes que el contenedor lo permite */
+}
+nav>ul>li.active{
+  border-bottom: white 2px solid;
+}
 body{
   background-color: rgb(15, 23, 42);
 }
 div#usuario{
   background: red;
 }
-
 .profile-img{
-  width: 450px;
-  height: 450px;
+  width: 28rem;
+  height: 28rem;
 }
+
 @media (max-width: 640px) {
   .profile-img{
     width: 250px;
     height: 250px;
   }
 }
-/* width */
+
 ::-webkit-scrollbar {
   width: 5px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }

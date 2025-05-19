@@ -14,23 +14,30 @@ function App() {
   const [parent] = useAutoAnimate(/* optional config */)
   return (
     <PageContext.Provider value={{page, setPage}}>
-      <div className="lg:w-3/4 w-full m-auto" ref={parent}>
-        <Menu/>
-        {
-          page === 'Home' ? <Main/> : ''
-        }
-        {
-          page === 'About' ? <AboutMe/> : ''
-        }
-        {
-          page === 'Work experience' ? <WorkExperience/> : ''
-        }
-        {
-          page === 'Stack' ? <Stack/> : ''
-        }
-        {
-          page === 'Say Hi' ? <Contact/> : ''
-        }
+      <div className='main-container-layout container mx-auto'>
+        <header className='my-4'>
+          <Menu/>
+        </header>
+        <main className='main-content'>
+          <div ref={parent} className='inner-content flex flex-col lg:flex-row-reverse justify-center align-center items-center lg:gap-5 gap'>
+            {
+              page === 'Home' ? <Main/> : ''
+            }
+            {
+              page === 'About' ? <AboutMe/> : ''
+            }
+            {
+              page === 'Work experience' ? <WorkExperience/> : ''
+            }
+            {
+              page === 'Stack' ? <Stack/> : ''
+            }
+            {
+              page === 'Say Hi' ? <Contact/> : ''
+            }
+          </div>
+        </main>
+        <footer>this is footer</footer>
       </div>
     </PageContext.Provider>
   );

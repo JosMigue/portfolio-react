@@ -1,1 +1,1 @@
-export const MainSection  = ({children}) => <div className="min-h-screen flex lg:flex-row flex-col justify-center items-center px-5">{children}</div>
+export const MainSection  = ({children}) => <div className="flex lg:flex-row flex-col justify-center items-center px-5">{children}</div>
