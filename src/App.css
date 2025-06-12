@@ -25,6 +25,7 @@ div#usuario{
 .profile-img{
   width: 28rem;
   height: 28rem;
+  object-fit: cover;
 }
 
 @media (max-width: 640px) {

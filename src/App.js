@@ -19,7 +19,7 @@ function App() {
           <Menu/>
         </header>
         <main className='main-content'>
-          <div ref={parent} className='inner-content flex flex-col lg:flex-row-reverse justify-center align-center items-center lg:gap-5 gap'>
+          <div ref={parent} className='inner-content flex flex-col lg:flex-row-reverse justify-center align-center items-center lg:gap-5 '>
             {
               page === 'Home' ? <Main/> : ''
             }

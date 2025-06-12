@@ -11,44 +11,37 @@ export default function AboutMe(){
   function About(){
     return (
       <>
-        <MainSection>
-          <div>
-            <div className="flex flex-wrap justify-center">
-              <h1 className="text-5xl font-bold text-white text-center my-2 w-full">About</h1>
-              <div>
-                <p className="text-gray-300 text-center">Hi, I'm developer, I love to write code 👨🏻‍💻</p>
-                <p className="text-gray-300 text-center">I have more than 2 years of experience with Web development, I had the opportunity to met with amazing people whom I learned a lot.</p>
-                <p className="text-gray-300 text-center">Actually, I'm looking for new challenges as Frontend or Backend developer</p>
-              </div>
+        <section className="text-white py-16 px-4 md:px-16">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4">About</h2>
+            <p className="text-lg mb-2">
+              Hi, I'm a developer and I love writing code 👨‍💻
+            </p>
+            <p className="text-md mb-2">
+              I have over 2 years of experience in web development. During this time, I’ve had the opportunity to work with amazing people from whom I’ve learned a lot.
+            </p>
+            <p className="text-md mb-8">
+              I'm currently looking for new challenges as a Frontend or Backend developer.
+            </p>
+          </div>
 
-            </div>
-            <div className="flex flex-wrap justify-center">
-              <h2 className="text-3xl w-full font-bold text-white text-center my-2">Highlights</h2>
-              <div className="grid lg:grid-cols-2 grid-cols-1 w-full text-center text-white">
-                <p className={styles.textHighlights} >Backend development</p>
-                <p className={styles.textHighlights} >Frontend development</p>
-                <p className={styles.textHighlights} >Team work</p>
-                <p className={styles.textHighlights} >Continuos improvement</p>
-                <p className={styles.textHighlights} >Self learning</p>
-                <p className={styles.textHighlights} >English B2</p>
-              </div>
-            </div>
-            <div className="flex flex-wrap justify-center">
-              <h2 className="text-3xl w-full font-bold text-white text-center my-2">Hobbies</h2>
-              <div className="grid lg:grid-cols-2 grid-cols-1 w-full text-center text-white">
-                <p className={styles.textHighlights} >Listen to music</p>
-                <p className={styles.textHighlights} >Tacos lover 🌮❤️</p>
-                <p className={styles.textHighlights} >Coding</p>
-                <p className={styles.textHighlights} >Movies</p>
-                <p className={styles.textHighlights} >Walks out</p>
-                <p className={styles.textHighlights} >Video Games</p>
-              </div>
-            </div>
-            <div className="flex flex-wrap justify-center my-10">
-              <button disabled="true" onClick={() => setSection(section => section = 'projects')} className={styles.disabledButton}>My Personal Projects 👨🏻‍💻 (work in progress)</button>
+          <div className="max-w-4xl mx-auto mb-12">
+            <h3 className="text-2xl font-semibold text-center mb-4">Highlights</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
+              <div className="border border-green-400 py-2 rounded">Backend Development</div>
+              <div className="border border-green-400 py-2 rounded">Frontend Development</div>
+              <div className="border border-green-400 py-2 rounded">Teamwork</div>
+              <div className="border border-green-400 py-2 rounded">Continuous Improvement</div>
+              <div className="border border-green-400 py-2 rounded">Self-learning</div>
+              <div className="border border-green-400 py-2 rounded">English Advanced</div>
             </div>
           </div>
-        </MainSection>
+          <div className="text-center">
+            <button className="border border-green-400 text-green-400 px-6 py-2 rounded hover:bg-green-500 hover:text-white transition">
+              My Personal Projects 👨‍💻 (Work in Progress)
+            </button>
+          </div>
+        </section>
       </>
     )
   }
