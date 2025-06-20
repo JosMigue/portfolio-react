@@ -1,10 +1,11 @@
-export default function Section({title, children}){
-  return(
-     <div className="my-10 w-full">
-      <h1 className="text-5xl font-bold text-white text-center py-2">{title}</h1>
-      <div className="flex flex-row flex-wrap  justify-evenly my-5">
-        {children}
+export default function Section({ children }) {
+  return (
+    <section className="text-white py-16 px-4 md:px-16">
+      <div className="text-center max-w-3xl mx-auto">
+        <div className="max-w-4xl text-center">
+          {children}
+        </div>
       </div>
-     </div> 
+    </section>
   )
 }

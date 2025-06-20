@@ -5,7 +5,7 @@ export default function Menu(){
     backgroundColor: `rgb(15, 23, 42)`
   }
   const {setPage, page} = useContext(PageContext);
-  const elements = ['Home','About','Work experience','Stack', 'Say Hi'];
+  const elements = ['Home','About','Work experience','Skills', 'Say Hi'];
   const styles = 'text-white cursor-pointer font-bold mx-5 hover:border-white hover:border-b-2 border-b-2 border-transparent transition duration-300';
     return(
       <>

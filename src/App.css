@@ -1,3 +1,4 @@
+@import "tailwindcss";
 .main-container-layout {
   display: grid;
   min-height: 100dvh;
@@ -7,6 +8,7 @@
 .main-content {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 
 .inner-content {
@@ -19,12 +21,12 @@ nav>ul>li.active{
 body{
   background-color: rgb(15, 23, 42);
 }
-div#usuario{
-  background: red;
-}
+
+
+/* Profile image styles */
 .profile-img{
   width: 28rem;
-  height: 28rem;
+  height: 22rem;
   object-fit: cover;
 }
 
@@ -33,8 +35,11 @@ div#usuario{
     width: 250px;
     height: 250px;
   }
+
 }
 
+/* Scrollbar styles */
+/* For Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -46,4 +51,10 @@ div#usuario{
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+/* Variables */
+
+@theme {  
+  --color-green-primary: #4ade80;
 }
