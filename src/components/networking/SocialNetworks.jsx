@@ -9,7 +9,7 @@ import email from '../../assets/img/email.svg'
 function SocialNetworks({requiredOnes}){
   return(
     <>
-      <div className="flex flex-row justify-evenly w-1/2">
+      <div className="flex flex-row justify-evenly w-full">
         {requiredOnes.includes('instagram') && <Network  name="Instagram" icon={instagram} url="https://www.instagram.com/itsmepepes/"/>}
         {requiredOnes.includes('linkedin') && <Network  name="Linkedin" icon={linkedin} url="https://www.linkedin.com/in/itsmejosmigue/"/>}
         {requiredOnes.includes('github') && <Network  name="Github" icon={github} url="https://github.com/JosMigue"/>}

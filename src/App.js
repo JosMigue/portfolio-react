@@ -1,15 +1,19 @@
-import './App.css';
-import Main from './components/Main'
-import Menu from './components/layout/Menu'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import AboutMe from './components/AboutMe'
-import WorkExperience from './components/WorkExperience'
 import { useState } from 'react'
 import { PageContext } from './context/PageContext'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
+
+import './App.css';
+
+import Main from './components/pages/Main'
+import Menu from './components/pages/Menu'
+import Skills from './components/pages/Skills'
+import Contact from './components/pages/Contact'
+import AboutMe from './components/pages/AboutMe'
+import WorkExperience from './components/pages/WorkExperience'
+
 import react from './assets/img/react.svg'
 import tailwind from './assets/img/tailwind-css.svg'
+import developerData from './data/developer.json'
 
 
 function App() {
@@ -17,6 +21,12 @@ function App() {
   const [parent] = useAutoAnimate(/* optional config */)
   return (
     <PageContext.Provider value={{ page, setPage }}>
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content={developerData.summary} />
+      <meta name="keywords" content="Frontend Developer, React, Node.js, Tailwind CSS, Portfolio" />
+
+
       <div className='main-container-layout container mx-auto'>
         <header className='my-4 position-sticky'>
           <Menu />

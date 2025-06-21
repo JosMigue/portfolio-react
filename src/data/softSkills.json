@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Agile Development",
+        "description": "Ability to work efficiently in Agile teams using methodologies such as SCRUM, adapting to changes and delivering iterative improvements."
+    },
+    {
+        "name": "Communication",
+        "description": "Clear and effective verbal and written communication with team members and stakeholders."
+    },
+    {
+        "name": "Collaboration",
+        "description": "Working cooperatively with others to achieve shared goals."
+    },
+    {
+        "name": "Problem Solving",
+        "description": "Identifying issues and finding creative, effective solutions."
+    },
+    {
+        "name": "Adaptability",
+        "description": "Adjusting quickly to new situations and changing priorities."
+    },
+    {
+        "name": "Time Management",
+        "description": "Organizing and prioritizing tasks to meet deadlines efficiently."
+    },
+    {
+        "name": "Critical Thinking",
+        "description": "Analyzing information objectively to make reasoned decisions."
+    },
+    {
+        "name": "Leadership",
+        "description": "Guiding and motivating team members to achieve project objectives."
+    },
+    {
+        "name":"English Level C1"
+    },
+    {
+        "name": "Spanish Native Speaker"
+    }
+]

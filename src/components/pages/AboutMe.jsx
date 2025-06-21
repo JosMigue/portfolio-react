@@ -1,4 +1,4 @@
-import Section from "./layout/Section"
+import Section from "../layout/Section"
 export default function AboutMe() {
   return (
     <Section>

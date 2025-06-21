@@ -1,0 +1,67 @@
+{
+    "name": "Jose Galván",
+    "title": "Frontend Developer",
+    "location": "",
+    "summary": "Experienced Frontend Developer with a strong background in building scalable web applications. Proficient in JavaScript, TypeScript, and modern frameworks like React and Angular. Passionate about creating user-friendly interfaces and optimizing performance.",
+    "experience": [
+        {
+            "title": "Technical Consultant II",
+            "company": "Thirdera a Cognizant Company",
+            "period": "Jun 2023 – Present",
+            "current": true,
+            "responsibilities": [
+                "Collaborating with stakeholders to define technical requirements.",
+                "Leading the development of scalable web applications using Vanilla JavaScript and/or Angular.",
+                "Maintaining and optimizing existing codebases."
+            ]
+        },
+        {
+            "title": "Technical Consultant I",
+            "company": "Handcloud Solutions Inc.",
+            "responsibilities": [
+                "Implemented scalable React components with TypeScript.",
+                "Worked closely with product teams to define and scope features.",
+                "Optimized application performance and accessibility."
+            ]
+        },
+        {
+            "title": "Full-Stack Developer (Full-Time)",
+            "company": "Witann Technologies",
+            "responsibilities": [
+                "Developed REST APIs with Node.js and Express.",
+                "Built responsive interfaces using React and Tailwind CSS.",
+                "Maintained MySQL database schemas and data consistency."
+            ]
+        },
+        {
+            "title": "Full-Stack Developer (Part-Time)",
+            "company": "Witann Technologies",
+            "responsibilities": [
+                "Worked on end-to-end features in an Agile environment.",
+                "Integrated third-party APIs and ensured cross-browser compatibility.",
+                "Participated in daily stand-ups and sprint planning."
+            ]
+        },
+        {
+            "title": "Full-Stack Developer",
+            "company": "Jl Marketing",
+            "responsibilities": [
+                "Designed reusable UI components in React.",
+                "Created backend services to support new features.",
+                "Ensured security best practices during development.",
+                "Customer support and troubleshooting.",
+                "Server management and deployment.",
+                "Ecommerce platform development using Shopify and Wordpress"
+            ]
+        }
+    ],
+    "education": {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "your University",
+        "year": 1234
+    },
+    "contact": {
+        "email": "developer@example.com",
+        "website": "#"
+    }
+}

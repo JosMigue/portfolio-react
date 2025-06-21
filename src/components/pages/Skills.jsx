@@ -1,19 +1,33 @@
-import skills from '../data/skills.json'
-import Skill from './skills/Skill'
-import Section from './layout/Section'
-import { useState } from 'react'
+import skills from '../../data/skills.json'
+import Skill from '../skills/Skill'
+import softSkills from '../../data/softSkills.json'
+import Section from '../layout/Section'
+import { useState} from 'react'
 import { useAutoAnimate } from '@formkit/auto-animate/react'
 //import {MainSection} from './layout/MainSection'
 export default function Skills() {
   const [section, setSection] = useState('main')
-  const [parent] = useAutoAnimate()
+  const [parent] = useAutoAnimate();
   const MainSection = () => {
     return (
-      <div className="grid grid-cols-3 gap-4 w-full">
-        {
-          skills.map(skill => <Skill name={skill.name} key={skill.name} icon={skill.icon} alt={skill.alt} url={skill.url} />)
-        }
-      </div>
+      <>
+        {Object.keys(skills).map((category) => (
+          <div key={category} className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">{category}</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {skills[category].map((skill) => (
+                <Skill
+                  name={skill.name}
+                  key={skill.name}
+                  icon={skill.icon}
+                  alt={skill.alt}
+                  url={skill.url}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </>
     )
   }
   const sectionHandler = (section) => {
@@ -21,8 +35,16 @@ export default function Skills() {
   }
   const SoftSkillSection = () => {
     return (
-      <div className="">
-        soft skills here
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {softSkills.map((skill) => (
+          <Skill
+            name={skill.name}
+            key={skill.name}
+            icon={'#'}
+            alt="#"
+            url="#"
+          />
+        ))}
       </div>
     )
   }
